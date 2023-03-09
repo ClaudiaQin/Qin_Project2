@@ -1,0 +1,136 @@
+@charset "UTF-8";
+
+
+
+h1{
+  /* font-family: 'Stardos Stencil', cursive; */
+  /* font-family: 'Odibee Sans', cursive; */
+  /* font-family: 'Chonburi', cursive; */
+  font-family: 'Contrail One', cursive;
+
+  font-size: 170px;
+  color: white;
+  position: absolute;
+  transform: rotate(-3deg);
+  top: 100px;
+  left: 600px;
+
+}
+
+  @font-face {
+  font-family: 'Impact';
+  src: url('Impact.ttf');
+  font-weight: normal;
+  font-style: normal;
+}
+
+h2{
+  font-family: 'Impact', Arial, sans-serif;
+  font-size: 45px;
+  color: white;
+  position: absolute;
+  /* transform: rotate(-4deg); */
+  top: 360px;
+  left: 1050px;
+  letter-spacing: 6px;
+  z-index: 2;
+}
+
+nav {
+  color: #fff;
+  font-family: 'Golos Text', sans-serif;
+  font-size: 15px;
+  font-weight: bold;
+  letter-spacing: 3px;
+  padding: 0 200px; /* Add padding to the left and right sides of the navigation bar */
+  box-sizing: border-box; /* Include the padding in the navigation bar's width calculation */
+  position: relative; /* Add position relative to keep the nav on top of the film images */
+  z-index: 2; /* Set z-index to keep the nav on top of the film images */
+}
+
+/* Stretch the navigation bar to cover the entire width of the screen */
+nav ul {
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+/* Style the links in the navigation bar */
+nav a {
+  display: block;
+  padding: 1em;
+  text-decoration: none;
+  color: #fff;
+  transition: background-color 0.3s ease-in-out;
+}
+
+nav a:hover {
+  /* background-color: #545454; */
+}
+
+.navigation a:link,
+.navigation a:visited {
+  color: white;
+  text-decoration: none;
+}
+
+.navigation a:hover,
+.navigation a.active {
+  color:#C30020;
+}
+
+/* Adjust the positioning of the film images */
+#film1{
+  width: 1500px;
+  position:relative;
+  left: -10px;
+  top: -40px;
+  z-index: 1; /* Set z-index to keep the film images behind the nav */
+}
+
+
+#film3{
+  position:absolute; /* Change position to absolute to position the image relative to the body */
+  right: 0px;
+  top: -60px;
+  width: 1750px;
+  z-index: 1; /* Set z-index to keep the film images behind the nav */
+}
+
+
+
+.strip {
+	background-image: url("img/film 4.png");
+	background-repeat: repeat-x;
+	height: 250px;
+  width: 80%;
+  position:absolute;
+  bottom: 0;
+  right: 0px;
+  z-index: 3;
+
+  }
+  
+  .strip:hover {
+	animation: strip-move 5s linear infinite;
+  }
+  
+  @keyframes strip-move {
+	from {
+	  background-position: 0 0;
+	}
+	to {
+	  background-position: 100% 0;
+	}
+  }
+
+
+body {
+  background-image: url(img/backdrop2.jpg);
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+
