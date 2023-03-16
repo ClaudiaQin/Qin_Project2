@@ -11,7 +11,7 @@ body{
 
 
 .cover {
-  background-image: url(img/backdrop3.png);
+  background-image: url("img/backdrop3.png");
   background-repeat: no-repeat;
   background-size: cover;
   height: 100vh;
@@ -218,7 +218,7 @@ to {
 
 /* /////////////////////////////////////////////////////////////////////////////////////////// */
 #IntheMoodforLove{
-  background-image: url(img/In\ the\ Mood\ for\ Love/IntheMoodforLove_Background2.jpg);
+  background-image: url("img/In\ the\ Mood\ for\ Love/IntheMoodforLove_Background2.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   top: 100vh;
@@ -309,7 +309,7 @@ to {
 
 /* /////////////////////////////////////////////////////////////////////////////////////////// */
 .HappyTogether{
-  background-image: url(img/Happy\ Together/HappyTogether_Background.jpg);
+  background-image: url("img/Happy\ Together/HappyTogether_Background.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   top: 100vh;
@@ -356,7 +356,7 @@ to {
 
 /* /////////////////////////////////////////////////////////////////////////////////////////// */
 .ChungkingExpress{
-  background-image: url(img/Chungking\ Express/ChungkingExpress_Background2.jpg);
+  background-image: url("img/Chungking\ Express/ChungkingExpress_Background2.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   top: 100vh;
@@ -403,7 +403,7 @@ to {
 
 /* /////////////////////////////////////////////////////////////////////////////////////////// */
 .DaysofBeingWild{
-  background-image: url(img/Days\ of\ Being\ Wild/DaysofBeingWild_Background.jpg);
+  background-image: url("img/Days\ of\ Being\ Wild/DaysofBeingWild_Background.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   top: 100vh;
