@@ -2,13 +2,11 @@
 
 
 
-
-
-
 body{
   margin: 0px;
   top: 0;
   width: 100%;
+  overflow-x: hidden;
 }
 
 
@@ -29,56 +27,6 @@ body{
   font-style: normal;
 }
 
-/* nav {
-  color: #fff;
-  font-family: 'Golos Text', sans-serif;
-  font-size: 15px;
-  font-weight: bold;
-  letter-spacing: 3px;
-  padding: 0 200px; 
-  box-sizing: border-box; 
-  position: relative; 
-  z-index: 2; 
-}
-
-nav ul {
-  display: flex;
-  justify-content: space-between;
-  margin: 0;
-  padding: 0;
-  list-style: none;
-}
-
-nav a {
-  display: block;
-  padding: 1em;
-  text-decoration: none;
-  color: #fff;
-  transition: background-color 0.3s ease-in-out;
-}
-
-nav a:hover {
-}
-
-.navigation a:link,
-.navigation a:visited {
-  color: white;
-  text-decoration: none;
-}
-
-.navigation a:hover,
-.navigation a.active {
-  color:#C30020;
-} */
-
-/* #film1{
-  width: 1500px;
-  position:relative;
-  left: -100px;
-  top: -40px;
-  z-index: 1;
-} */
-
 
 nav {
   color: #fff;
@@ -95,7 +43,7 @@ nav {
   padding: 1em;
   box-sizing: border-box;
   overflow-y: auto;
-  z-index: 2; 
+  z-index: 10; 
   transform: translate(0, -50%);
   height: 100vh;
 }
@@ -124,7 +72,6 @@ nav ul {
 }
 
 
-/* Add some space between the navigation links */
 nav a + a {
   margin-top: 0.5em;
 }
@@ -161,15 +108,7 @@ nav a + a {
   left: 35%;
 }
 
-#title2{
-  /* font-family: 'Odibee Sans', cursive; */
-  font-family: 'Chonburi', cursive;
-  font-size: 5vh;
-  color: white;
-  position: absolute;
-  top: 15%;
-  left: 32%;
-}
+
 
 #subtitle1{
   font-family: 'Impact', Arial, sans-serif;
@@ -183,20 +122,11 @@ nav a + a {
   z-index: 2;
 }
 
-#subtitle2{
-  font-family: 'Impact', Arial, sans-serif;
-  font-size: 2.3vh;
-  color: white;
-  position: absolute;
-  top: 22%;
-  left: 40%;
-  z-index: 2;
-}
 
 .strip {
 	background-image: url("strip/strip3.2.png");
 	background-repeat: repeat-x;
-	height: 80px;
+	height: 7.4vh;
   width: 125%;
   background-size: 125%;
   position:fixed;
@@ -218,12 +148,7 @@ to {
   }
 }
 
-/* .introduction{
-  position:relative;
-  font-family: Arial, Helvetica, sans-serif;
-  font-size:20px;
-  background-color: black;
-} */
+
 
 @font-face {
   font-family: 'Univers';
@@ -232,10 +157,12 @@ to {
   font-style: normal;
 }
 
-.introduction {
-  font-family: 'Univers', Arial, sans-serif;
-  width: 100%;
-  height: 100vh;
+#introduction {
+  font-family: 'Noto Sans Lao', sans-serif;
+  font-weight: 300;
+  letter-spacing: 0.1vh;
+  line-height:3vh;  width: 100%;
+  height: 90vh;
   top: 100vh;
   background-color:#121212;
   color: white;
@@ -249,14 +176,13 @@ to {
   left: 5%;
   right: 0;
   position: relative;
-
 }
 
 #Portrait{
   /*height: 46vh;*/
   width: 50vh;
-  padding-top:5vh;
-  padding-left:17%;
+  padding-top:7.2vh;
+  padding-left:19%;
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
 }
 
@@ -266,89 +192,322 @@ to {
   font-size: 5vw;
   color: white;
   position: absolute;
-  top: 28vh;
-  left: 50%;
+  top: 32vh;
+  left: 51%;
   line-height:10vh;
   text-shadow: 0.6vh 0.6vh 0.4vh rgba(0,0,0,0.8);
 }
 
 #para1{
-  font-size: 1.3vh;
-  line-height: 2.2vh;
+  font-size: 1.5vh;
+  line-height: 2.8vh;
   position: absolute;
-  left: 17%;
+  left: 19%;
   width: 50vh;
 }
 
 
 #para2{
-  font-size: 1.3vh;
-  line-height: 2.2vh;
+  font-size: 1.5vh;
+  line-height: 2.8vh;
   position: absolute;
-  left: 50%;
+  left: 51%;
   width: 50vh;
-  top: 4vh;
+  top: 5vh;
 }
 
-#para3{
-  color: white;
-  font-size: 1.7vh;
-  line-height: 2.2vh;
-  position: absolute;
-  left: 15vw;
-  width: 70vw;
-  top: 30vh;
-}
-
-.IntheMoodforLove{
-  background-image: url(img/In\ the\ Mood\ for\ Love/1936706.jpg);
+/* /////////////////////////////////////////////////////////////////////////////////////////// */
+#IntheMoodforLove{
+  background-image: url(img/In\ the\ Mood\ for\ Love/IntheMoodforLove_Background2.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   top: 100vh;
-  height: 56vw;
+  height: 100vh;
   width: 100%;
   position: relative;
 }
 
+#title2{
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 4vh;
+  color: white;
+  position: absolute;
+  top: 12%;
+  left: 38%;
+}
+
+#subtitle2{
+  font-family: 'Lato', sans-serif;
+  font-size: 1.5vh;
+  letter-spacing: 0.4vh;
+  color: white;
+  position: absolute;
+  top: 20%;
+  left: 40.5%;
+  z-index: 2;
+}
+
+#movie_description1{
+  font-family: 'Noto Sans Lao', sans-serif;
+  font-weight: 300;
+  letter-spacing: 0.1vh;
+  line-height:3vh;
+  color: white;
+  font-size: 1.7vh;
+  position: absolute;
+  left: 25vw;
+  width: 50vw;
+  top: 25vh;
+}
+
 .bottom_container{
   background-color: white;
-  opacity: 50%;
+  opacity: 25%;
   position: absolute;
-  top: 40vw;
-  height: 16vw;
+  top: 72vh;
+  height: 28vh;
   width: 100%;
 }
 
-/* .IntheMoodforLove{
-  top:2000px;
+
+.galleryimage1{
+  height: 11.7vw;
+  left: 7vw;
+  top: 35vw;
+  width: 20.8vw;
+  position: absolute;
+  z-index: 3;
+}
+
+
+.galleryimage2{
+  height: 11.7vw;
+  left: 28.8vw;
+  top: 35vw;
+  width: 20.8vw;
+  position: absolute;
+  z-index: 3;
+}
+
+.galleryimage3{
+  height: 11.7vw;
+  left: 50.6vw;
+  top: 35vw;
+  width: 20.8vw;
+  position: absolute;
+  z-index: 3;
+}
+
+.galleryimage4{
+  height: 11.7vw;
+  left: 72.4vw;
+  top: 35vw;
+  width: 20.8vw;
+  position: absolute;
+  z-index: 3;
+}
+
+/* /////////////////////////////////////////////////////////////////////////////////////////// */
+.HappyTogether{
+  background-image: url(img/Happy\ Together/HappyTogether_Background.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  top: 100vh;
+  height: 100vh;
   width: 100%;
-  height: 1080px;
-
-} */
-
-#galleryimage1{
-  height: 12vw;
-  left: 15vw;
-  top: 35vw;
-  width: 20vw;
-  position: absolute;
-  z-index: 3;
+  position: relative;
 }
 
-#galleryimage2{
-  height: 12vw;
-  left: 40vw;
-  top: 35vw;
-  width: 20vw;
+#title5{
+  /* font-family: 'Odibee Sans', cursive; */
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 4vh;
+  color: white;
   position: absolute;
-  z-index: 3;
+  top: 12%;
+  left: 41.5%;
 }
 
-#galleryimage3{
-  height: 12vw;
-  left: 65vw;
-  top: 35vw;
-  width: 20vw;
+#subtitle5{
+  font-family: 'Lato', sans-serif;
+  font-size: 1.5vh;
+  letter-spacing: 0.4vh;
+  color: white;
   position: absolute;
-  z-index: 3;
+  top: 20%;
+  left: 41.5%;
+  z-index: 2;
 }
+
+#movie_description4{
+  font-family: 'Noto Sans Lao', sans-serif;
+  font-weight: 300;
+  letter-spacing: 0.1vh;
+  line-height:3vh;
+  color: white;
+  font-size: 1.7vh;
+  position: absolute;
+  left: 25vw;
+  width: 50vw;
+  top: 25vh;
+}
+
+
+
+/* /////////////////////////////////////////////////////////////////////////////////////////// */
+.ChungkingExpress{
+  background-image: url(img/Chungking\ Express/ChungkingExpress_Background2.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  top: 100vh;
+  height: 100vh;
+  width: 100%;
+  position: relative;
+}
+
+#title3{
+  /* font-family: 'Odibee Sans', cursive; */
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 4vh;
+  color: white;
+  position: absolute;
+  top: 12%;
+  left: 39%;
+}
+
+#subtitle3{
+  font-family: 'Lato', sans-serif;
+  font-size: 1.5vh;
+  letter-spacing: 0.4vh;
+  color: white;
+  position: absolute;
+  top: 20%;
+  left: 40.5%;
+  z-index: 2;
+}
+
+#movie_description2{
+  font-family: 'Noto Sans Lao', sans-serif;
+  font-weight: 300;
+  letter-spacing: 0.1vh;
+  line-height:3vh;
+  color: white;
+  font-size: 1.7vh;
+  position: absolute;
+  left: 25vw;
+  width: 50vw;
+  top: 25vh;
+}
+
+
+
+/* /////////////////////////////////////////////////////////////////////////////////////////// */
+.DaysofBeingWild{
+  background-image: url(img/Days\ of\ Being\ Wild/DaysofBeingWild_Background.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  top: 100vh;
+  height: 100vh;
+  width: 100%;
+  position: relative;
+}
+
+#title4{
+  /* font-family: 'Odibee Sans', cursive; */
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 4vh;
+  color: white;
+  position: absolute;
+  top: 12%;
+  left: 40.5%;
+}
+
+#subtitle4{
+  font-family: 'Lato', sans-serif;
+  font-size: 1.5vh;
+  letter-spacing: 0.4vh;
+  color: white;
+  position: absolute;
+  top: 20%;
+  left: 41.5%;
+  z-index: 2;
+}
+
+#movie_description3{
+  font-family: 'Noto Sans Lao', sans-serif;
+  font-weight: 300;
+  letter-spacing: 0.1vh;
+  line-height:3vh;
+  color: white;
+  font-size: 1.7vh;
+  position: absolute;
+  left: 25vw;
+  width: 50vw;
+  top: 25vh;
+}
+
+
+/* /////////////////////////////////////////////////////////////////////////////////////////// */
+#More{
+  font-family: 'Impact', Arial, sans-serif;
+  height: 45vh;
+  background-color:#121212;
+  top: 100vh;
+  width: 100%;
+  position: relative; 
+}
+
+
+#WorkFromPeers{
+  font-size: 3vh;
+  color: white;
+  letter-spacing: 0.6vh;
+  position: absolute;
+  top:20%;
+  left: 42%;
+  margin: 1px;
+}
+
+
+.button {
+  font-family: 'Lato', sans-serif;
+  letter-spacing: 0.2vh;
+  font-weight: 400;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 0.9vw;
+  margin: 4px 2px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+  color: rgba(255, 255, 255, 0.8);
+  background: rgb(145, 92, 182);
+  padding: 15px 40px;
+  border-radius: 6px;
+  font-weight: normal;
+  transition: all 0.2s ease-in-out;
+}
+
+
+.button:hover {
+  color: rgba(255, 255, 255, 1);
+  box-shadow: 0 5px 15px #008CBA;
+  background-color: #008CBA;
+}
+
+
+.button1 {
+  top:45%;
+  left: 36vw;
+  position: absolute;
+}
+
+
+.button2 {
+
+  left: 50vw;
+  position: absolute;
+  top:45%;
+
+}
+
