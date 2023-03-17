@@ -464,7 +464,7 @@ to {
   letter-spacing: 0.6vh;
   position: absolute;
   top:20%;
-  left: 42%;
+  left: 41%;
   margin: 1px;
 }
 
@@ -509,4 +509,20 @@ to {
   position: absolute;
   top:45%;
 
+}
+
+#copyright{
+  top: 90vh;
+  height: 10vh;
+  width: 100%;
+  position: relative; 
+}
+
+#copyrightstatement{
+  color: white;
+  font-family: 'Lato', sans-serif;
+  letter-spacing: 0.2vh;
+  font-weight: 400;
+  text-align: center;
+  font-size: 0.7vw;
 }
